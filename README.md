@@ -5,4 +5,5 @@ To get this working, go into every file and replace place-holders: proxmox_ip(IP
 Optional: 
 
 You can change the values of the specs in index.php if you want diffrenet VM sizes other than the default.
+
 You can go into start.sh(the script that creates VMs) and uncomment the line for adding tags
