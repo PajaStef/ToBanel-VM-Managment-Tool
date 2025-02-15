@@ -8,7 +8,7 @@ ram=$3
 #echo $cores
 #echo $ram
 
-config=$(curl -s --insecure -X POST -H 'Authorization: PVEAPIToken=token' -d "cores=$cores&memory=$ram" https://proxmox_ip:8006/api2/json/nodes/your_node/qemu/$vmid/config )
+config=$(curl -s --insecure -X POST -H 'Authorization: PVEAPIToken=yourtoken' -d "cores=$cores&memory=$ram" https://proxmox_ip:8006/api2/json/nodes/your_node/qemu/$vmid/config )
 #echo "Config response: $config_response"
 
 if [[ "$config" == *"errors"* ]]; then
