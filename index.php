@@ -64,7 +64,7 @@
                 <option value="">Select a template</option>
                 <?php
                 $templates = [
-                    ["id" => "104", "name" => "Web Server Template"],
+                    ["id" => "104", "name" => "Web Server Template"], // add your templates here by setting the proxmox vm id of the template and setting a name for it
                     ["id" => "123", "name" => "Ubuntu Template"]
                 ];
                 foreach ($templates as $template) {
@@ -76,16 +76,15 @@
             <input type="text" id="vmname" name="vmname" class="form-control" required><br>
             <label for="specs">Select Specs:</label>
             <select id="specs" name="specs" class="form-control" required>
-                <option value="2_2048">2 Cores, 2 GB RAM</option>
+                <option value="2_2048">2 Cores, 2 GB RAM</option>  <!-- in the value 2_2048 2-number of cores 2048-mb of ram -->
                 <option value="4_4096">4 Cores, 4 GB RAM</option>
             </select><br>
             <input type="submit" value="Create VM" class="btn btn-primary">
         </form>
         <nav>
-            <a href="http://192.168.1.180/upgrade.php" class="btn btn-secondary">Upgrade Page</a>
-            <a href="http://192.168.1.180/vm_control.php" class="btn btn-secondary">VM Control Page</a>
+            <a href="http://ip_of_the_panel_server/upgrade.php" class="btn btn-secondary">Upgrade Page</a>
+            <a href="http://ip_of_the_panel_server/vm_control.php" class="btn btn-secondary">VM Control Page</a>
         </nav>
     </div>
 </body>
 </html>
-
