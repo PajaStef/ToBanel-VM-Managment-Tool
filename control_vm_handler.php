@@ -12,9 +12,9 @@ if (isset($_POST['action']) && isset($_POST['vmid'])) {
 
     if (array_key_exists($action, $scripts)) {
         $script = $scripts[$action];
-	$command = "$script $vmid";
+        $command = "$script $vmid";
 
-	#echo $command;
+        #echo $command;
 
         // Log the command being executed
         error_log("Executing command: $command");
@@ -29,4 +29,3 @@ if (isset($_POST['action']) && isset($_POST['vmid'])) {
     echo "Missing parameters.";
 }
 ?>
-
