@@ -85,10 +85,9 @@
         </form>
         <div id="vm_status" class="alert alert-info">Status: N/A</div>
         <nav>
-            <a href="http://192.168.1.180/upgrade.php" class="btn btn-primary">Upgrade Page</a>
-            <a href="http://192.168.1.180/" class="btn btn-secondary">Creation Page</a>
+            <a href="http://ip_of_panel_server/upgrade.php" class="btn btn-primary">Upgrade Page</a>
+            <a href="http://ip_of_panel_server/" class="btn btn-secondary">Creation Page</a>
         </nav>
     </div>
 </body>
 </html>
-
