@@ -1,9 +1,5 @@
 Its just a cool project I made to test my skills. if you want full details go: https://www.pavlestefanovic.com/projects.html
 
-To get this working, go into every file and replace place-holders: proxmox_ip(IP/Domain of your proxmox server) and token(the API token you have to access your Proxmox's API). Then go into index.php and change the $templates array to add all your templates that you setup on your proxmox.  Also make sure that your template machines have qemu guest agent setup so the scripts can retrive IPs of new machines.
+This projcets uses the ProxMox API to create, manage and change VM configurations. To get this working you will need to go into every file and set how your proxmox is setup, you will need to set API keys, paths to the shell scripts and so on. So just make sure you went to every file and changed whats needed and thats it it should work just fine. 
 
-Optional: 
-
-You can change the values of the specs in index.php if you want diffrenet VM sizes other than the default.
-
-You can go into start.sh(the script that creates VMs) and uncomment the line for adding tags
+For this project I used PHP HTML and Bash.
