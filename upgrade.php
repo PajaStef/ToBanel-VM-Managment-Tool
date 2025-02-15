@@ -84,7 +84,7 @@
                 <option value="">Select a VM</option>
                 <!-- populating the dropdown -->
                 <?php
-                $vms = json_decode(shell_exec("curl -s --insecure -H 'Authorization: PVEAPIToken=token' https://proxmox_ip:8006/api2/json/nodes/your_node/qemu"), true);
+                $vms = json_decode(shell_exec("curl -s --insecure -H 'Authorization: PVEAPIToken=yourtoken' https://proxmox_ip:8006/api2/json/nodes/your_node/qemu"), true);
                 if ($vms && isset($vms['data'])) {
                     $vm_data = $vms['data'];
                     usort($vm_data, function ($a, $b) {
@@ -103,10 +103,9 @@
             <input type="submit" value="Upgrade VM" class="btn btn-primary">
         </form>
         <nav>
-            <a href="http://192.168.1.180/vm_control.php" class="btn btn-secondary">VM Control Page</a>
-            <a href="http://192.168.1.180/" class="btn btn-secondary">Creation Page</a>
+            <a href="http://ip_of_panel_server/vm_control.php" class="btn btn-secondary">VM Control Page</a>
+            <a href="http://ip_of_panel_server/" class="btn btn-secondary">Creation Page</a>
         </nav>
     </div>
 </body>
 </html>
-
